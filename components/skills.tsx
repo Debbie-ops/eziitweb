@@ -110,11 +110,14 @@ export default function Skills() {
             className="w-90 md:w-100 h-auto rounded-lg"
           />
           <div className="relative flex items-center">
-            <div className="h-64 w-px bg-gray-300 relative">
-              <span className="absolute left-1/2 transform -translate-x-1/2 top-[10%] w-3 h-3 bg-primary rounded-full"></span>
-              <span className="absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 w-3 h-3 bg-primary rounded-full"></span>
-              <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[10%] w-3 h-3 bg-primary rounded-full"></span>
-            </div>
+          <div className="h-64 w-px bg-gray-300 relative">
+  <span className="absolute left-1/2 transform -translate-x-1/2 top-[-10%] w-3 h-3 bg-primary rounded-full"></span>
+  <span className="absolute left-1/2 transform -translate-x-1/2 top-[20%] w-3 h-3 bg-primary rounded-full"></span>
+  <span className="absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 w-3 h-3 bg-primary rounded-full"></span>
+  <span className="absolute left-1/2 transform -translate-x-1/2 top-[75%] w-3 h-3 bg-primary rounded-full"></span>
+  <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10%] w-3 h-3 bg-primary rounded-full"></span>
+</div>
+
             <ul className="ml-6 max-w-md space-y-6">
               <li className="text-muted-foreground">
                 <span className="font-bold text-foreground">Instant Credit Access:</span> Shop at partnered outlets with zero upfront payment.

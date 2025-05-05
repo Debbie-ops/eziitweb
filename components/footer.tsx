@@ -14,7 +14,7 @@ export default function Footer() {
             <span className="bg-gradient-to-r from-[#CBA328] via-[#F4D03F] to-[#D4AF37] bg-clip-text text-transparent">Eziit</span>
           </Link>
           <p className="mt-4 max-w-xs text-lg">
-            Empowering people to shop now and pay later—zero interest, total convenience, full security.
+            Empowering people to shop now and pay later. Zero interest, total convenience, full security.
           </p>
         </div>
 
