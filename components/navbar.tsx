@@ -8,8 +8,8 @@ import { Moon, Sun, Menu, X } from "lucide-react"
 
 const navLinks = [
   { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
+  { name: "How it works", href: "#skills" },
+  //{ name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ]
 
@@ -49,8 +49,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="text-xl font-bold font-poppins">
-            <span className="gradient-text">Debbie</span>
-            <span className="text-foreground">.dev</span>
+          <span className="bg-gradient-to-r from-[#CBA328] to-[#F4D03F] bg-clip-text text-transparent">
+            Eziit
+          </span>
+            <span className="text-foreground"></span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -21,7 +21,7 @@ export default function About() {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
         >
-          About <span className="gradient-text">Me</span>
+          About <span className="bg-gradient-to-r from-[#CBA328] via-[#F4D03F] to-[#D4AF37] bg-clip-text text-transparent">Eziit</span>
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -29,17 +29,18 @@ export default function About() {
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative aspect-square max-w-md mx-auto"
+            className="relative w-full aspect-[4/3] mx-auto" // Changed aspect ratio to 4:3
           >
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 -z-10 transform rotate-3" />
             <div className="absolute inset-0 rounded-2xl border border-primary/10 transform -rotate-3" />
-            <div className="relative h-full w-full overflow-hidden rounded-xl border border-border">
+            <div className="relative h-full w-full overflow-hidden rounded-xl">
               <Image
-                src="/me.jpeg?height=600&width=600"
-                alt="Daliso"
-                width={600}
-                height={600}
-                className="object-cover h-full w-full"
+                src="/hero.jpg"
+                alt="us"
+                fill // Use fill instead of fixed width/height
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                className="object-cover"
+                priority
               />
             </div>
           </motion.div>
@@ -49,24 +50,13 @@ export default function About() {
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            {/*<h3 className="text-2xl font-bold mb-4 font-poppins">
-              Software Engineer with a passion for building exceptional digital experiences
-            </h3>*/}
-
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Hello! I'm a software engineer with over a year of professional experience in developing modern web
-                applications. My journey in software development began with a strong foundation in computer science and
-                has evolved through hands on experience with various technologies and frameworks.
-              </p>
-
-              <p>
-                I specialize in full stack development, with my experience including frameworks like React and Laravel. I'm passionate about writing clean, maintainable code and creating intuitive user
-                interfaces that provide exceptional user experiences.
-              </p>
-
-              <p>
-                When I'm not coding, you can find me exploring new places and adventures as a creative {";)"}
+                Eziit is a credit platform that empowers you to shop for everyday essentials without the burden of interest or hidden fees. 
+                With Eziit, you can buy goods on credit from trusted merchants and pay later, all at zero interest. 
+                <br /><br />
+                Our mission is simple: to make access to basic goods and services easier, fairer, and stress free. Whether it's groceries, household items, or personal needs, 
+                Eziit gives you the flexibility to pay in manageable installments with full transparency.
               </p>
             </div>
 
@@ -74,7 +64,7 @@ export default function About() {
               <Button asChild>
                 <a href="/DALISO.MITICV.pdf" target="_blank" rel="noopener noreferrer">
                   <FileText className="mr-2 h-4 w-4" />
-                  Download Resume
+                  View Terms and Conditions
                 </a>
               </Button>
             </div>

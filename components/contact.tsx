@@ -58,7 +58,7 @@ export default function Contact() {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
         >
-          Get In <span className="gradient-text">Touch</span>
+          Get In <span className="bg-gradient-to-r from-[#CBA328] via-[#F4D03F] to-[#D4AF37] bg-clip-text text-transparent">Touch</span>
         </motion.h2>
 
         <motion.p
@@ -67,7 +67,7 @@ export default function Contact() {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Have a project in mind or want to discuss opportunities? Let's talk!
+          Have more questions? Reach us out and we will get back to you as soon as possible.
         </motion.p>
 
         <div className="flex justify-center mt-12">
@@ -92,7 +92,7 @@ export default function Contact() {
                         href="mailto:miti26miti@gmail.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        miti26miti@gmail.com
+                        placeholder@gmail.com
                       </a>
                     </div>
                   </div>
@@ -107,7 +107,7 @@ export default function Contact() {
                         href="tel:+260975043032"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +260 975 043032
+                        +260 770 000 000
                       </a>
                     </div>
                   </div>
@@ -124,10 +124,10 @@ export default function Contact() {
                 </div>
 
                 <div className="mt-8 text-center">
-                  <h4 className="text-sm font-medium mb-4">Connect with me</h4>
+                  <h4 className="text-sm font-medium mb-4">Connect with Us</h4>
                   <div className="flex justify-center space-x-4">
                     <a
-                      href="https://linkedin.com/in/daliso-miti-b43b6b258"
+                      href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-10 w-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors"
