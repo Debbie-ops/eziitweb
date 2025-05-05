@@ -13,9 +13,9 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Daliso D. Miti | Software Engineer",
-  description: "Software engineer portfolio showcasing projects and skills",
-    generator: 'debs'
+  title: "Eziit",
+  description: "Fintech Application",
+    generator: 'whence'
 }
 
 export default function RootLayout({
